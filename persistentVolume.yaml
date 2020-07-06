@@ -1,0 +1,12 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: elastiflow-volume-1
+spec:
+  storageClassName: elastiflow
+  capacity:
+    storage: 30Gi #Size of the volume
+  accessModes:
+    - ReadWriteOnce #type of access
+  hostPath:
+    path: "/mnt/elastiflow-volume-1" #host location

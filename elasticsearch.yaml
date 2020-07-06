@@ -9,7 +9,10 @@ esConfig:
     indices.query.bool.max_clause_count: 8192
     search.max_buckets: 100000
 persistence:
-  enabled: false
+  enabled: true
+
+volumeClaimTemplate:
+  storageClassName: "elastiflow"
 
 resources:
   requests:
